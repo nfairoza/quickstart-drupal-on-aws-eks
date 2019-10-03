@@ -232,7 +232,7 @@ Resources:
         RemoteAccessCIDR: !Ref RemoteAccessCIDR
         NodeInstanceType: !Ref NodeInstanceType
         NumberOfNodes: !Ref NumberOfNodes
-        KubernetesVersion: !Ref KubernetesVersion
+        # KubernetesVersion: !Ref KubernetesVersion
 Outputs:
   KubeConfigPath:
     Value: !GetAtt EKSVPCStack.Outputs.KubeConfigPath
