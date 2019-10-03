@@ -213,8 +213,11 @@ Resources:
   EKSVPCStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: !Sub >-
-        https://${QSS3BucketName}.s3.amazonaws.com/${QSS3KeyPrefix}submodules/quickstart-amazon-eks/templates/amazon-eks-master.template.yaml
+        TemplateURL: "https://github.com/aws-quickstart/quickstart-amazon-eks/blob/bc954faa64d5e7ff159814ac83e9d54bd9f7de89/templates/amazon-eks-master.template.yaml"
+      # TemplateURL: !Sub 
+      #   - https://${QSS3BucketName}.s3.amazonaws.com/${QSS3KeyPrefix}submodules/quickstart-amazon-eks/templates/amazon-eks-master.template.yaml
+      #   - { QSS3BucketName: !Ref QSS3BucketName }
+      #   - { QSS3KeyPrefix: !Ref QSS3KeyPrefix }
       Parameters:
         AvailabilityZones: !Join 
           - ','
