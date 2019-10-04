@@ -13,7 +13,7 @@
     },
     {
         "ParameterKey": "QSS3KeyPrefix",
-        "ParameterValue": "quickstart-eks-aws/"
+        "ParameterValue": "quickstart-drupal-on-aws-eks/"
     },
     {
         "ParameterKey": "QSS3BucketName",
