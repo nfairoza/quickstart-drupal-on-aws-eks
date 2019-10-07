@@ -1,0 +1,2 @@
+source vpy36/bin/activate
+taskcat -c quickstart-drupal-on-aws-eks/ci/taskcat.yml 

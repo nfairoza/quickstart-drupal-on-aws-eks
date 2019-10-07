@@ -1,7 +1,8 @@
+
 [
     {
         "ParameterKey": "AvailabilityZones",
-        "ParameterValue": "$[taskcat_getaz_2]"
+        "ParameterValue": "$[taskcat_getaz_3]"
     },
     {
         "ParameterKey": "KeyPairName",
@@ -10,10 +11,6 @@
     {
         "ParameterKey": "RemoteAccessCIDR",
         "ParameterValue": "0.0.0.0/0"
-    },
-    {
-        "ParameterKey": "QSS3KeyPrefix",
-        "ParameterValue": "quickstart-drupal-on-aws-eks/"
     },
     {
         "ParameterKey": "QSS3BucketName",
