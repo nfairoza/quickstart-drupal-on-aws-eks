@@ -25,9 +25,20 @@ Parameters:
     Type: AWS::EC2::VPC::Id
   VpcSecurityGroupId:
     Type: AWS::EC2::SecurityGroup::Id
+  VpcSecurityGroupId:
+    Type: AWS::EC2::SecurityGroup::Id
 
 
 Resources:
+  AuroraSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties: 
+      DBSubnetGroupDescription: "Subnets available for the Aurora SampleDB DB Instance"
+      DBSubnetGroupName: auroraSubnetGroup
+      SubnetIds: 
+        - !Ref SubnetIds
+    
+
   AuroraCluster:
     Type: AWS::RDS::DBCluster
     Properties:
