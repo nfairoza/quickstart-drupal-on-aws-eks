@@ -1,6 +1,6 @@
 global:
-  owner: tonynv@amazon.com
-  qsname: qs-workshop
+  owner: owner@amazon.com
+  qsname: quickstart-drupal-on-aws-eks
   regions:
     - ap-southeast-1
     - ap-southeast-2
